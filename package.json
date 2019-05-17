@@ -1,0 +1,46 @@
+{
+  "name": "last-chance-to-commit",
+  "version": "0.0.1",
+  "description": "Deletes uncommitted code every hour",
+  "bin": {
+    "last-chance-to-commit": "dist/main.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -q --no-stdin --ignore dist --exec babel-node src/main.js",
+    "build": "babel src --out-dir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k2052/last-chance-to-commit.git"
+  },
+  "keywords": [
+    "git",
+    "developer",
+    "productivity",
+    "dx"
+  ],
+  "author": "K-2052",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k2052/last-chance-to-commit/issues"
+  },
+  "homepage": "https://github.com/k2052/last-chance-to-commit#readme",
+  "dependencies": {
+    "ink": "^2.1.1",
+    "meow": "^5.0.0",
+    "moment": "^2.24.0",
+    "nodemon": "^1.19.0",
+    "prettier": "^1.17.1",
+    "react": "^16.8.6",
+    "shelljs": "^0.8.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1"
+  }
+}
