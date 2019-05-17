@@ -31,6 +31,9 @@ const runGitRevert = () => {
   if (shell.exec('git reset --hard').code !== 0) {
     shell.echo('Error: Git Reset failed');
     shell.exit(1);
+  } else {
+    // flushes the git command result to stdout
+    shell.echo();
   }
 };
 
