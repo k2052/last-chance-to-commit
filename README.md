@@ -11,6 +11,8 @@ You can use it to help with following;
 - forcing yourself to break down problems into smaller chunks
 - deleting code you didn't really need but would never let go of
 
+⚠️ **This will run `git reset hard` which has the potential to lose work**
+
 ## Installation/Usage
 
 You will need to run this in a project that has git and you will need node installed. You can install and run with good old npx:
